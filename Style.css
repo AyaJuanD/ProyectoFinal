@@ -4,6 +4,7 @@ body {
 }
 
 
+
 header {
     background-color: #ffffff;
     padding: 20px 0;
@@ -61,7 +62,7 @@ header.scroll #logo img {
 }
 
 header.scroll #logo img, header.scroll nav a {
-    opacity: 1; 
+    opacity: 0.1; 
 }
 ul{
     list-style: none; 
@@ -174,3 +175,137 @@ nav a {
     text-align: center;
 
 }
+
+.servicio {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px;
+}
+
+.servicio-contenido {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagen-servicio {
+    width: 400px;
+    height: auto;
+}
+
+.texto-servicio {
+    max-width: 500px;
+}
+
+.texto-servicio h2 {
+    color: #D4AF37;
+    font-size: 30px;
+    font-family: serif;
+    margin-bottom: 20px;
+}
+
+.texto-servicio p {
+    font-size: 16px;
+    font-family: system-ui;
+    line-height: 1.5;
+}
+
+/* ... Otros estilos ... */
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+
+    #logo img {
+        width: 100px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .caja {
+        height: auto;
+    }
+
+    .swiper-slide img {
+        height: auto;
+    }
+
+    .sobre_nostros {
+        margin: 20px;
+    }
+
+    #sobre_nosotros h2 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .sobre_nostros p {
+        max-width: 100%;
+        margin-right: 20px;
+    }
+
+    .imagen-sobre-nosotros {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .servicio-contenido {
+        flex-direction: column-reverse;
+    }
+
+    .imagen-servicio {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .texto-servicio {
+        max-width: 100%;
+    }
+
+    .texto-servicio h2 {
+        font-size: 24px;
+    }
+
+    .texto-servicio p {
+        font-size: 14px;
+    }
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-seccion {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.logo-footer {
+    width: 100px;
+    height: auto;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.numeros-contacto {
+    text-align: right;
+}
+
