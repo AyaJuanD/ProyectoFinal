@@ -1,5 +1,3 @@
-alert("Hola Bienvenido a mi sitio web ")
-
 window.addEventListener('scroll', function () {
     var header = document.querySelector('header');
     var caja = document.querySelector('.caja');

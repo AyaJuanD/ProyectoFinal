@@ -1,4 +1,8 @@
 
+body {
+    overflow-x: hidden; /* Evitar desplazamiento horizontal */
+}
+
 
 header {
     background-color: #ffffff;
@@ -11,48 +15,53 @@ header {
     z-index: 1000;
     display: inherit;
 
+
 }
 
-#ImgInicio {
-    width: 100%; /* Ajusta según el ancho deseado */
-    max-width: 1200px; /* Establece un ancho máximo para evitar que se extienda demasiado en pantallas grandes */
-    margin: 0 auto; /* Centra el banner horizontalmente */
+#logo img {
+    transition: width 0.5s ease;
+    width: 150px;
+    height: auto;
+
 }
+
+
 
 .swiper-slide img {
-    width: 100%; /* Ajusta según el ancho deseado */
-    height: auto; /* Mantiene la proporción de aspecto original */
-    background-color: #000000;
-
+    width: 100%;
+    height: 700px; 
+    object-fit: cover;
 }
+
 
 header.scroll {
-    background-color: rgba(255, 255, 255, 0); 
+    background-color: rgba(255, 255, 255, 0.133); 
     padding: 20px 0; 
 }
+
 .caja{
     width: 100%; 
     height: 100px;
     display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center;
     transition: padding 0.2s ease;
     padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .caja.scroll {
     padding: 0;
 }
 
-#logo img {
-    transition: width 0.5s ease;
-}
+
 
 header.scroll #logo img {
     width: 150px;
 }
 
 header.scroll #logo img, header.scroll nav a {
-    opacity: 0.0; 
+    opacity: 1; 
 }
 ul{
     list-style: none; 
@@ -60,6 +69,12 @@ ul{
     padding: 0; 
 }
 
+#ImgInicio {
+    width: 100%;
+    margin: auto; 
+    overflow: hidden; /* Ocultar contenido que se desplaza fuera del contenedor */
+    position: relative;
+}
 
 nav{
     display: flex;
@@ -89,53 +104,73 @@ nav a {
 
 
 .principal{
-    background: #ffffff;
+    background: #ff0000;
     padding: 20px;
 }
 
-.titulo-centralizado{
+.sobre_nostros {
+    background-color: #ffffff; /* Fondo negro */
+    color: #000000; /* Color del texto blanco */
+    margin: 50px;
+    margin-top: 0; 
+    text-align: left; /* Justificar el texto */
+    display: flex; 
+    align-items: center;
+}
+
+#sobre_nosotros h2 {
+    color: #D4AF37; /* Color naranja para el título */
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 50px;
+    font-family: serif;
+    margin-left: 50px;
+}
+
+
+.sobre_nostros p {
+    max-width: 800px;
+    margin-right: 100px;
+    font-size: 15px;
+    font-family: system-ui;
+    line-height: 1.5;
+}
+
+.imagen-sobre-nosotros {
+    width: 650px; /* Ajusta según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    margin-left: auto;
+}
+
+
+.servicios-imagen {
+    position: relative;
+    overflow: hidden; /* Para asegurarse de que la imagen no se desborde del contenedor */
+}
+
+.imagen-servicios {
+    width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+    height: 500px;
+}
+
+.titulo-servicios {
+    position: absolute;
+    top: 50%; /* Centra verticalmente el título en relación con el contenedor de la imagen */
+    left: 20px; /* Centra horizontalmente el título en relación con el contenedor de la imagen */
+    color: #000000; /* Color del texto blanco */
+    font-size: 43px;
+    font-family: serif;
     text-align: center;
 }
 
-p{
+.texto_servicios{
+    position: absolute;
+    top: 60%; /* Centra verticalmente el título en relación con el contenedor de la imagen */
+    left: 50px; /* Centra horizontalmente el título en relación con el contenedor de la imagen */
+    color: #000000; /* Color del texto blanco */
+    font-size: 18px;
+    font-family: serif;
     text-align: center;
-}
 
-em strong{
-    color:red;
-}
-
-#mision{
-    font-size: 20px;
-}
-
-.diferenciales{
-    background: #85f9ff;
-    padding: 30px;
-}
-
-.items{
-    font-style: italic;
-}
-
-ul{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-}
-
-.imagenDiferenciales{
-    width: 50%;
-}
-
-th{
-    background: #faf773; /*Azul*/
-}
-td{
-    background-color: rgb(200, 200, 201);
-    border: 1px solid rgb(0,0,0);
-}
-table{
-    border-color: rgb(0, 0, 0);
 }
