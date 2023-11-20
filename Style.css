@@ -210,6 +210,7 @@ nav a {
 }
 
 
+
 /* Estilos para pantallas pequeñas (móviles) */
 @media only screen and (max-width: 768px) {
     header {
@@ -280,37 +281,37 @@ nav a {
 }
 
 footer {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
+    background-color: #ffffff;
+    color: #565656;
 }
 
 .footer-seccion {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 25%;
+    margin-left: 39%;
+    margin-bottom: 10px;
 }
 
-.logo-footer {
-    width: 100px;
+/* Estilos del botón de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-btn a {
+    display: block;
+    background-color: #25d366; /* Color de fondo de WhatsApp */
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(84, 84, 84, 0.2);
+  }
+  
+  .whatsapp-btn img {
+    width: 50px; /* Tamaño de la imagen del icono de WhatsApp */
     height: auto;
 }
+  
 
-.redes-sociales{
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-.redes-sociales img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    
-}
-
-.numeros-contacto {
-    text-align: right;
-}
 
