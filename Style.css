@@ -302,7 +302,7 @@ footer {
   
   .whatsapp-btn a {
     display: block;
-    background-color: #25d366; /* Color de fondo de WhatsApp */
+    background-color: #25d36540; /* Color de fondo de WhatsApp */
     padding: 10px;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(84, 84, 84, 0.2);
