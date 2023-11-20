@@ -113,16 +113,17 @@ nav a {
     color: #000000; 
     margin: 50px;
     margin-top: 0; 
-    text-align: left; 
+    text-align: center; 
     display: flex; 
     align-items: center;
+    flex-direction: column;
 }
 
 #sobre_nosotros h2 {
     color: #D4AF37; 
     margin: 20px;
     margin-top: 50px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     font-size: 50px;
     font-family: serif;
     margin-left: 50px;
@@ -131,7 +132,6 @@ nav a {
 
 .sobre_nostros p {
     max-width: 800px;
-    margin-right: 100px;
     font-size: 15px;
     font-family: system-ui;
     line-height: 1.5;
@@ -140,7 +140,6 @@ nav a {
 .imagen-sobre-nosotros {
     width: 650px; 
     height: auto; 
-    margin-left: auto;
 }
 
 
